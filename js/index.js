@@ -17,6 +17,12 @@ function tinhTienLuong(){
     document.getElementById('tongSoLuong').innerHTML = tongSoLuong.toLocaleString() + ' VND';
 }
 
+// document.getElementById('frmTinhLuong').onsubmit = function(event){
+//     event.preventDefault(); //Chặn reload trang
+//     tinhTienLuong();
+    
+// }
+
 // Bài 2: Tính giá trị trung bình
 function tinhGiaTriTrungBinh(){
     /*
