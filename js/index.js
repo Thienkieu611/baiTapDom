@@ -17,11 +17,10 @@ function tinhTienLuong(){
     document.getElementById('tongSoLuong').innerHTML = tongSoLuong.toLocaleString() + ' VND';
 }
 
-// document.getElementById('frmTinhLuong').onsubmit = function(event){
-//     event.preventDefault(); //Chặn reload trang
-//     tinhTienLuong();
-    
-// }
+document.getElementById('frmTinhLuong').onsubmit = function(event){
+    event.preventDefault(); //Chặn reload trang
+    tinhTienLuong();
+}
 
 // Bài 2: Tính giá trị trung bình
 function tinhGiaTriTrungBinh(){
@@ -50,6 +49,11 @@ function tinhGiaTriTrungBinh(){
    document.getElementById('giaTriTB').innerHTML = giaTriTB;
 }
 
+document.getElementById('frmTinhGiaTriTB').onsubmit = function(event){
+    event.preventDefault(); //Chặn reload trang
+    tinhGiaTriTrungBinh();
+}
+
 // Bài 3: Quy đổi tiền 
 function quyDoiTien(){
     // Đầu vào: soTien: number 
@@ -64,6 +68,11 @@ function quyDoiTien(){
 
     //In ra màn hình
     document.getElementById('soTienDaQuyDoi').innerHTML = soTienDaQuyDoi.toLocaleString() + ' VND';
+}
+
+document.getElementById('frmQuyDoiTien').onsubmit = function(event){
+    event.preventDefault(); //Chặn reload trang
+    quyDoiTien();
 }
 
 // Bài 4: Tính diện tích, chu vi hình chữ nhật
@@ -88,6 +97,11 @@ function hinhChuNhat(){
     document.getElementById('ketQuaTinhHCN').innerHTML = 'Diện tích: ' + dienTich + '; Chu vi: ' + chuVi;
 }
 
+document.getElementById('frmHinhChuNhat').onsubmit = function(event){
+    event.preventDefault(); //Chặn reload trang
+    hinhChuNhat();
+}
+
 // Bài 5: Tính tổng 2 ký số
 function tongKySo(){
     // Đầu vào: kySo: number 
@@ -103,4 +117,9 @@ function tongKySo(){
 
     //In ra màn hình
     document.getElementById('giaTriTongKySo').innerHTML = giaTriTongKySo;
+}
+
+document.getElementById('frmTongKySo').onsubmit = function(event){
+    event.preventDefault(); //Chặn reload trang
+    tongKySo();
 }
